@@ -1,0 +1,15 @@
+body {
+  /* font-family: 'Inter', sans-serif; */
+  /* font-family: 'Work Sans', sans-serif; */
+}
+
+.nav__container {
+}
+
+.nav_btns {
+  display: none;
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 780px) {
+}
