@@ -21,12 +21,12 @@
   padding: 0;
   font: inherit;
 
-  --clr-dark-brown: #222;
-  --clr-blue: #33c3f0;
+  --clr-neutral-700: #4a4d50;
+
   --clr-white: #fff;
   --clr-black: #000;
   --transition: all 350ms ease-in-out;
-  --container-md: 88%;
+  --container-md: 93%;
   --container-lg: 88%;
 }
 

@@ -14,25 +14,62 @@
     <link rel="stylesheet" href="resets.css" />
   </head>
   <body>
+    <!-- NAVBAR BEGINNING -->
     <nav>
       <div class="container nav__container">
         <div>
-          <img src="logo.svg" alt="" />
+          <img src="./svgs/logo.svg" alt="" />
         </div>
-        <ul>
-          <li><a href="#"> Blog </a></li>
-          <li><a href="#">Platforms</a></li>
-          <li><a href="#">Resources</a></li>
-          <li><a href="#">Scholarships</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">FAQ</a></li>
-          <button>Get Started</button>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#" class="work-sans"> Blog </a></li>
+          <li><a href="#" class="work-sans">Platforms</a></li>
+          <li><a href="#" class="work-sans">Resources</a></li>
+          <li><a href="#" class="work-sans">Scholarships</a></li>
+          <li><a href="#" class="work-sans">Shop</a></li>
+          <li><a href="#" class="work-sans">FAQ</a></li>
+          <button class="inter">Get Started</button>
         </ul>
-        <div class="nav_btns">
-          <img src="hamburger.svg" alt="" />
-          <img src="close.svg" alt="" />
+        <div class="nav_btns" id="toggle-nav">
+          <img id="hamburger-btn" src="./svgs/hamburger.svg" alt="" />
+          <img id="close" class="hide" src="./svgs/close.svg" alt="" />
         </div>
       </div>
     </nav>
+    <!-- NAVBAR ENDING -->
+    <!-- HERO SECTION BEGINNING -->
+    <main>
+      <div class="hero__container container">
+        <div class="hero-details">
+          <p class="work-sans social-mobile">Follow us on socials</p>
+          <div class="socials">
+            <p class="work-sans desktop">Follow us on socials</p>
+            <img src="./svgs/socials/youtube.svg" alt="" />
+            <img src="./svgs/socials/x.svg" alt="" />
+            <img src="./svgs/socials/youtubered.svg" alt="" />
+            <img src="./svgs/socials/instagram.svg" alt="" />
+            <img src="./svgs/socials/linkedin.svg" alt="" />
+            <img src="./svgs/socials/facebook.svg" alt="" />
+            <img src="./svgs/socials/tiktok.svg" alt="" />
+            <img src="./svgs/socials/x.svg" alt="" />
+          </div>
+          <h1 class="hero-title">
+            Sparking their<br />
+            <span>curiosity</span> & creativity.
+          </h1>
+          <p class="work-sans hero-desc">
+            We prepare young minds for an innovative future by igniting
+            imagination, fostering essential soft skills, and providing engaging
+            hands-on learning experiences in coding, STEM, and interactive
+            classes.
+          </p>
+          <button class="inter hero-btn">Get Started</button>
+        </div>
+        <div class="hero-img">
+          <img src="./images/girl-laughing.png" alt="" />
+        </div>
+      </div>
+    </main>
+    <!-- HERO SECTION ENDING -->
   </body>
+  <script src="app.js"></script>
 </html>
