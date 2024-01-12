@@ -4,6 +4,10 @@ body {
   background-color: #f8f8f8;
 }
 
+.bg {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
 /* HELPER CLASSES */
 .hide {
   display: none;
@@ -64,6 +68,7 @@ nav {
   width: calc(100% - 1.5rem);
   color: var(--clr-white);
   border: none;
+  max-width: 200px;
 }
 /* NAVBAR END */
 
@@ -136,9 +141,9 @@ main {
     )
   );
   border: none;
-  max-width: 260px;
-  min-width: 200px;
-  /* align-self: center; */
+  max-width: 200px;
+  min-width: 170px;
+  align-self: center;
 }
 /* HERO SECTION ENDING */
 
@@ -176,7 +181,8 @@ main {
     max-height: 700px;
   }
   .hero-btn {
-    align-items: start;
+    align-self: start;
+    margin-top: 1rem;
   }
 }
 
@@ -194,7 +200,8 @@ main {
 @media (max-width: 780px) {
   .nav__links {
     position: fixed;
-    background-color: gray;
+    /* background-color: gray; */
+    background: hsl(0 0% 0% / 0.9);
     z-index: 9;
     inset: 0 0 0 30%;
     padding-top: 6rem;
@@ -202,7 +209,15 @@ main {
     padding-left: 1.5rem;
     flex-direction: column;
     transform: translateX(100%);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.16), 0 1px 3px rgba(0, 0, 0, 0.23);
     transition: all 250ms ease-in-out;
+  }
+
+  @supports (backdrop-filter: blur(1rem)) {
+    .nav__links {
+      background: hsl(0 0% 100% / 0.1);
+      backdrop-filter: blur(1rem);
+    }
   }
 
   .show-nav {

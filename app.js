@@ -12,8 +12,12 @@ toggleNavBtn.addEventListener("click", () => {
   if (navLinks.classList.contains(SHOW_NAV)) {
     closeBtn.classList.remove(HIDE);
     hamburgerBtn.classList.add(HIDE);
+    document.body.classList.add("bg");
+    document.body.style.overflowY = "hidden";
   } else {
     closeBtn.classList.add(HIDE);
     hamburgerBtn.classList.remove(HIDE);
+    document.body.classList.remove("bg");
+    document.body.style.overflowY = "scroll";
   }
 });
